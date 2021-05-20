@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1401
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timetable Management System", "Timetable Management System\Timetable Management System.csproj", "{D47814DE-20CF-4C8A-A3E0-125C25A0257E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTableManagementSystem", "..\TimeTableManagementSystem\TimeTableManagementSystem\TimeTableManagementSystem\TimeTableManagementSystem.csproj", "{DE431B6B-B503-48F2-9A23-9AA3FD3A787C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "..\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1.csproj", "{E1825271-2E6A-4ACC-9C79-E7F6E040A41A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TimePal Setup", "TimePal Setup\TimePal Setup.vdproj", "{F207BC5F-2094-45A4-9782-19975768E6A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D47814DE-20CF-4C8A-A3E0-125C25A0257E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47814DE-20CF-4C8A-A3E0-125C25A0257E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47814DE-20CF-4C8A-A3E0-125C25A0257E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47814DE-20CF-4C8A-A3E0-125C25A0257E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE431B6B-B503-48F2-9A23-9AA3FD3A787C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE431B6B-B503-48F2-9A23-9AA3FD3A787C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE431B6B-B503-48F2-9A23-9AA3FD3A787C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE431B6B-B503-48F2-9A23-9AA3FD3A787C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1825271-2E6A-4ACC-9C79-E7F6E040A41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1825271-2E6A-4ACC-9C79-E7F6E040A41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1825271-2E6A-4ACC-9C79-E7F6E040A41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1825271-2E6A-4ACC-9C79-E7F6E040A41A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F207BC5F-2094-45A4-9782-19975768E6A5}.Debug|Any CPU.ActiveCfg = Debug
+		{F207BC5F-2094-45A4-9782-19975768E6A5}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98574678-A328-45C8-BC68-AB91FB863ECE}
+	EndGlobalSection
+EndGlobal

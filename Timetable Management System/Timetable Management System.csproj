@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D47814DE-20CF-4C8A-A3E0-125C25A0257E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Timetable_Management_System</RootNamespace>
+    <AssemblyName>Timetable Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Timetable_Management_System.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tt1_kJf_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\NuGet\iTextSharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.23\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Location\Add Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\Add Location.Designer.cs">
+      <DependentUpon>Add Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\Add Suitable Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\Add Suitable Room.Designer.cs">
+      <DependentUpon>Add Suitable Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\Allocate Suitable Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\Allocate Suitable Location.Designer.cs">
+      <DependentUpon>Allocate Suitable Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Location\Consecutive Session Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\Consecutive Session Rooms.Designer.cs">
+      <DependentUpon>Consecutive Session Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\Non Overlapping Session Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\Non Overlapping Session Rooms.Designer.cs">
+      <DependentUpon>Non Overlapping Session Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\Parallel Sessions Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\Parallel Sessions Rooms.Designer.cs">
+      <DependentUpon>Parallel Sessions Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\Session Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\Session Rooms.Designer.cs">
+      <DependentUpon>Session Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\View Requested Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\View Requested Rooms.Designer.cs">
+      <DependentUpon>View Requested Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Window\Main Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Window\Main Window.Designer.cs">
+      <DependentUpon>Main Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\Manage Locations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location\Manage Locations.Designer.cs">
+      <DependentUpon>Manage Locations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Working Days Hours\AddWorkingDaysHours1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Working Days Hours\AddWorkingDaysHours1.Designer.cs">
+      <DependentUpon>AddWorkingDaysHours1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Working Days Hours\Manage_Time_Slots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Working Days Hours\Manage_Time_Slots.Designer.cs">
+      <DependentUpon>Manage_Time_Slots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Working Days Hours\Manage_Working_DH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Working Days Hours\Manage_Working_DH.Designer.cs">
+      <DependentUpon>Manage_Working_DH.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Location\Add Location.resx">
+      <DependentUpon>Add Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\Add Suitable Room.resx">
+      <DependentUpon>Add Suitable Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\Allocate Suitable Location.resx">
+      <DependentUpon>Allocate Suitable Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\Consecutive Session Rooms.resx">
+      <DependentUpon>Consecutive Session Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\Non Overlapping Session Rooms.resx">
+      <DependentUpon>Non Overlapping Session Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\Parallel Sessions Rooms.resx">
+      <DependentUpon>Parallel Sessions Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\Session Rooms.resx">
+      <DependentUpon>Session Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\View Requested Rooms.resx">
+      <DependentUpon>View Requested Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Window\Main Window.resx">
+      <DependentUpon>Main Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\Manage Locations.resx">
+      <DependentUpon>Manage Locations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Working Days Hours\AddWorkingDaysHours1.resx">
+      <DependentUpon>AddWorkingDaysHours1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Working Days Hours\Manage_Time_Slots.resx">
+      <DependentUpon>Manage_Time_Slots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Working Days Hours\Manage_Working_DH.resx">
+      <DependentUpon>Manage_Working_DH.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AppData.xsc">
+      <DependentUpon>AppData.xsd</DependentUpon>
+    </None>
+    <None Include="AppData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AppData.xss">
+      <DependentUpon>AppData.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\university-icon-png-9-Transparent-Images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1497835.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tt1_kJf_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TimeTableManagementSystem\TimeTableManagementSystem\TimeTableManagementSystem\TimeTableManagementSystem.csproj">
+      <Project>{de431b6b-b503-48f2-9a23-9aa3fd3a787c}</Project>
+      <Name>TimeTableManagementSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WindowsFormsApp1\WindowsFormsApp1\WindowsFormsApp1.csproj">
+      <Project>{e1825271-2e6a-4acc-9c79-e7f6e040a41a}</Project>
+      <Name>WindowsFormsApp1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
