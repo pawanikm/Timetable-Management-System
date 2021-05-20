@@ -152,6 +152,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session Allocation\Session_Allocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Session Allocation\Session_Allocation.Designer.cs">
+      <DependentUpon>Session_Allocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Add_Student_Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Add_Student_Group.Designer.cs">
+      <DependentUpon>Add_Student_Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Manage_Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Manage_Students.Designer.cs">
+      <DependentUpon>Manage_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tags\Manage_Tags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tags\Manage_Tags.Designer.cs">
+      <DependentUpon>Manage_Tags.cs</DependentUpon>
+    </Compile>
     <Compile Include="Working Days Hours\AddWorkingDaysHours1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +231,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Session Allocation\Session_Allocation.resx">
+      <DependentUpon>Session_Allocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\Add_Student_Group.resx">
+      <DependentUpon>Add_Student_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\Manage_Students.resx">
+      <DependentUpon>Manage_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tags\Manage_Tags.resx">
+      <DependentUpon>Manage_Tags.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Working Days Hours\AddWorkingDaysHours1.resx">
       <DependentUpon>AddWorkingDaysHours1.cs</DependentUpon>
